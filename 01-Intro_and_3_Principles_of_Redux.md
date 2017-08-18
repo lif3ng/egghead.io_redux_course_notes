@@ -10,17 +10,17 @@ Redux 的第一原则 (无论有多复杂):
 
 因为全部状态都有一个对象来表示，所以我们可以跟踪不同时间的变化。
 
-# 02. Describing State Changes with Actions
+# 02. 通过 Action 描述状态改变
 [Video Link](https://egghead.io/lessons/javascript-redux-describing-state-changes-with-actions?series=getting-started-with-redux)
 
-The second principle of Redux is that **the *state tree* is read only**.
-Any time you want to change the state, you have to dispatch an **action**. An action is a plain JS object describing the change. Just like the state is the minimal representation of the data, the action is the minimal representation of the change to that data.
+Redux 的第二原则是 ** *状态树* 只读**。
+任何时候你想要改变状态，你必须分发一个 **action** 。action 是一个描述状态改变的纯JS对象。就像 state 是数据的最简表示一样，action 是数据变化的最简表示。
 
-The only requirement for an action is that it has a type property (conventionally a String).
+action 的唯一要求是拥有 type 属性（通常是一个字符串）。
 
-For example, in a counter app, there are `INCREMENT` and `DECREMENT` actions. In the case of a ToDo app, the display components don't know how an item was added to the list-- all they know is that an `ADD_TODO` action was dispatched, with `text` content "hey" and a sequential `id`.
+比如，在计数器应用中，有 `INCREMENT` 和 `DECREMENT` actions， 对于 ToDo 应用，展示组件不知道一个条目如何被加到列表中--它们只知道 `ADD_TODO` action 被分发，这个 action 拥有 `text` 内容 和 `id` 序号。 
 
-The overall principle here is that the state is read only, and can only be modified by dispatching actions.
+总体原则是 state 是只读的， 只能通过分发 action 被改变。
 
 # 03. Pure and Impure Functions
 [Video Link](https://egghead.io/lessons/javascript-redux-pure-and-impure-functions)
