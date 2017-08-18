@@ -1,14 +1,14 @@
-# 01. The Single Immutable State Tree
+# 01. 单向不可变状态树
 [Video Link](https://egghead.io/lessons/javascript-redux-the-single-immutable-state-tree?series=getting-started-with-redux)
 
-The first principle of Redux (no matter the complexity):
+Redux 的第一原则 (无论有多复杂):
 
-**The entire state of the application will be represented by one JavaScript object.**
+**应用的整体状态将由一个 JS 对象来表示。**
 
-All changes and mutations to the application are explicit.
-These mutations, which include the data and the UI state, are contained in a single object we call the **state**.
+对于应用的所有改变都是明确的。
+这些变化，无论是数据还是UI的状态，都被包含在一个叫做 **state** 的单一对象中。
 
-Since the entire state is represented in a single object, we are able to keep track of changes over time
+因为全部状态都有一个对象来表示，所以我们可以跟踪不同时间的变化。
 
 # 02. Describing State Changes with Actions
 [Video Link](https://egghead.io/lessons/javascript-redux-describing-state-changes-with-actions?series=getting-started-with-redux)
