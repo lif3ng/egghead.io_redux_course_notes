@@ -1,6 +1,7 @@
 # Summary
 
-* [Intro and 3 Principles of Redux](01-Intro_and_3_Principles_of_Redux.md)
+* [Introduction](README.md)
+* [Redux 简介及三大原则](01-Intro_and_3_Principles_of_Redux.md)
 * [The Reducer and the Store](02-Reducer_and_Store.md)
 * [Implementing the Store from Scratch](03-Implementing_Store_from_Scratch.md)
 * [A React Counter Example](04-React_Counter_Example.md)
@@ -10,7 +11,7 @@
 * [Reducer Composition with Arrays](08-Reducer_Composition_with_Arrays.md)
 * [Reducer Composition with Objects](09-Reducer_Composition_with_Objects.md)
 * [Reducer Composition with combineReducers](10-Reducer_Composition_with_combineReducers.md)
-* [Implementing combineReducers() from Scratch](11-Implementing_combineReducers_from_Scratch.md)
+* [Implementing combineReducers\(\) from Scratch](11-Implementing_combineReducers_from_Scratch.md)
 * [Example: Adding a Todo](12-React_Todo_List_Example_Adding_a_Todo.md)
 * [Example: Toggling a Todo](13-React_Todo_List_Example_Toggling_a_Todo.md)
 * [Example: Filtering Todos](14-React_Todo_List_Example_Filtering_Todos.md)
@@ -21,7 +22,8 @@
 * [Passing the Redux Store Explicitly via Props](19-Passing_the_Store_Down_Explicitly_via_Props.md)
 * [Passing the Redux Store Explicitly via Context](20-Passing_the_Store_Down_Implicitly_via_Context.md)
 * [Passing the Store via Provider from react-redux](21-Passing_the_Store_Down_with_Provider_from_React_Redux.md)
-* [Generating Containers with connect(): VisibleTodoList](22-Generating_Containers_with_connect_from_React_Redux_VisibleTodoList.md)
-* [Generating Containers with connect(): AddTodo](23-Generating_Containers_with_connect_from_React_Redux_AddTodo.md)
-* [Generating Containers with connect(): FooterLink](24-Generating_Containers_with_connect_from_Readct_Redux_FooterLink.md)
+* [Generating Containers with connect\(\): VisibleTodoList](22-Generating_Containers_with_connect_from_React_Redux_VisibleTodoList.md)
+* [Generating Containers with connect\(\): AddTodo](23-Generating_Containers_with_connect_from_React_Redux_AddTodo.md)
+* [Generating Containers with connect\(\): FooterLink](24-Generating_Containers_with_connect_from_Readct_Redux_FooterLink.md)
 * [Extracting Action](25-Extracting_Action_Creators.md)
+

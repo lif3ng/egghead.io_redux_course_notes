@@ -1,12 +1,11 @@
-# 01. 单向不可变状态树
+# 01. 单一不可变状态树
 [Video Link](https://egghead.io/lessons/javascript-redux-the-single-immutable-state-tree?series=getting-started-with-redux)
 
 Redux 的第一原则 (无论有多复杂):
 
 **应用的整体状态将由一个 JS 对象来表示。**
 
-对于应用的所有改变都是明确的。
-这些变化，无论是数据还是UI的状态，都被包含在一个叫做 **state** 的单一对象中。
+对于应用的所有改变都是明确的。这些变化，无论是数据还是UI的状态，都被包含在一个叫做 **state** 的单一对象中。
 
 因为全部状态都有一个对象来表示，所以我们可以跟踪不同时间的变化。
 
@@ -22,12 +21,12 @@ action 的唯一要求是拥有 type 属性（通常是一个字符串）。
 
 总体原则是 state 是只读的， 只能通过分发 action 被改变。
 
-# 03. Pure and Impure Functions
+# 03. 纯方法和非纯方法
 [Video Link](https://egghead.io/lessons/javascript-redux-pure-and-impure-functions)
 
-Before learning more about Redux, it's important to know the difference between "Pure" and "Impure" functions.
+在学习更多 Redux 知识之前，弄清楚“纯方法”和“非纯方法”之间的区别是很重要的。
 
-**Pure:**
+**纯函数:**
 ```JavaScript
 function square(x) {
   return x * x;
@@ -36,9 +35,9 @@ function squareAll(items) {
   return items.map(square);
 }
 ```
-Pure functions are those whose return values depend only upon the values of their arguments. Pure functions don't have side effects like network or database calls. Pure functions also do not override the values of anything. In the above example, a new array is returned instead of modifying the `items` that was passed in.
+纯方法的返回值只由传入参数的值决定。纯方法不会操作网络或者数据库。纯方法也不会覆盖任何值。在上面的例子中，返回了一个新数组，而不是修改传入的 `items`。
 
-**Impure:**
+**非纯函数:**
 ```JavaScript
 function square(x) {
   updateXInDatabase(x);
@@ -50,16 +49,16 @@ function squareAll(items) {
   }
 }
 ```
-Contrast the "Impure" function. A database is called, and values passed in are being overwritten.
+对比“非纯”函数，调用了数据库，传入的值被覆盖了。
 
-This distinction is important to understand, since Redux requires that certain functions are pure.
+这一差别对于理解很重要，因为 Redux 要求某些方法是纯方法。
 
-# 04. The Reducer Function
+# 04. Reducer 方法
 [Video Link](https://egghead.io/lessons/javascript-redux-the-reducer-function)
 
-React introduced the idea that the UI layer is most predictable when it is described as a pure function of the application's state.
+React 引入了这样一个概念：使用纯方法描述应用状态时，UI 层最可预测的。
 
-Redux complements this approach by requiring that state mutations in your app need to be described by a pure function that takes the previous state and the action being dispatched, and returns the next state of your application.
+Redux 补充了这种方法：应用中的状态改变通过一个纯函数来描述，这个函数通过先前的状态和一个被分发的action， 返回应用的下一个状态。
 
 **Inside a Redux application there is one particular function that takes the previous state and the action being dispatched, and returns the next state of the whole application**. It is important that the function is pure (i.e. the state being given to it isn't modified) because it has to return the new object representing the application's new state.
 
